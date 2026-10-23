@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Segurança da Informação - Guia Completo de Carreiras, Formação, Prática Profissional e Quiz Interativo para a Feira de Profissões.">
+  <title>Segurança da Informação | Feira de Profissões</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo" id="inicio">
+    <a class="marca" href="#inicio">
+      <span class="marca-icone" aria-hidden="true">◆</span>
+      <span><strong>Segurança da Informação</strong><small>Proteja seu mundo digital • Feira de Profissões</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navegacao">☰ <span class="sr-only">Abrir menu</span></button>
+    <nav id="navegacao" aria-label="Navegação principal">
+      <a href="#sobre">O que é</a>
+      <a href="#pilares">Pilares</a>
+      <a href="#formacao">Formação & Custos</a>
+      <a href="#ingresso">Como Ingressar</a>
+      <a href="#carreiras">Carreira & Salários</a>
+      <a href="#pratica" class="nav-destaque">A Profissão na Prática</a>
+      <a href="#quiz" class="nav-quiz">Quiz</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="sobretitulo">CONHECIMENTO • PREVENÇÃO • TECNOLOGIA</p>
+        <h1>Proteja seu <span>mundo digital.</span></h1>
+        <p>Conheça a carreira de <strong>Segurança da Informação</strong>, as formas de ingresso, oportunidades de mercado no Rio de Janeiro e experimente a profissão na prática com nossa simulação e quiz interativo!</p>
+        <div class="hero-botoes">
+          <a class="botao" href="#pratica">Simular Profissão na Prática <span>⚡</span></a>
+          <a class="botao secundario" href="#quiz">Testar no Quiz <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-arte" aria-hidden="true">
+        <div class="anel anel-1"></div>
+        <div class="anel anel-2"></div>
+        <div class="escudo">✓<span class="cadeado">▣</span></div>
+        <span class="bolha b1">⌘</span>
+        <span class="bolha b2">☁</span>
+        <span class="bolha b3">◎</span>
+        <span class="bolha b4">▤</span>
+      </div>
+    </section>
+
+    <!-- SOBRE E PILARES -->
+    <section class="sobre-pilares" id="sobre">
+      <div class="sobre">
+        <p class="rotulo">ENTENDA O CONCEITO</p>
+        <h2>O que é Segurança da Informação?</h2>
+        <p>É o conjunto de estratégias, processos, controles e tecnologias utilizados para proteger dados e sistemas digitais contra acessos não autorizados, vazamentos, alterações maliciosas e paralisações operacionais.</p>
+        <p>Ela está presente em todas as interações cotidianas: em aplicativos de bancos, redes sociais, prontuários médicos, e-commerces e na infraestrutura crítica de empresas e governos.</p>
+        <button class="link-botao" data-expand="maisSobre" aria-expanded="false">Ver um exemplo do dia a dia +</button>
+        <p class="extra" id="maisSobre" hidden><strong>Exemplo real:</strong> Quando uma instituição financeira implementa criptografia de ponta a ponta e exige Autenticação em Dois Fatores (2FA), ela garante que apenas você possa movimentar seus recursos, mesmo que sua senha seja descoberta.</p>
+      </div>
+      <div id="pilares" class="pilares">
+        <p class="rotulo">A BASE DA PROTEÇÃO</p>
+        <h2>Os 3 pilares fundamentais (Tríade CID)</h2>
+        <div class="cards tres">
+          <article class="card">
+            <span class="simbolo azul">▣</span>
+            <h3>Confidencialidade</h3>
+            <p>Apenas pessoas e sistemas devidamente autorizados têm acesso à informação sigilosa.</p>
+          </article>
+          <article class="card">
+            <span class="simbolo verde">◇</span>
+            <h3>Integridade</h3>
+            <p>Os dados permanecem exatos, autênticos e preservados contra modificações indevidas.</p>
+          </article>
+          <article class="card">
+            <span class="simbolo roxo">◷</span>
+            <h3>Disponibilidade</h3>
+            <p>Os sistemas e informações estão acessíveis e funcionais sempre que os usuários autorizados precisarem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMEAÇAS E RISCOS -->
+    <section class="secao escura" id="riscos">
+      <p class="rotulo">FIQUE ATENTO</p>
+      <h2>Riscos e ameaças digitais do mundo real</h2>
+      <p class="introducao">O profissional de segurança precisa conhecer as táticas dos cibercriminosos para defender a infraestrutura.</p>
+      <div class="cards cinco">
+        <article class="card risco">
+          <span class="emoji">✉</span>
+          <h3>Phishing</h3>
+          <p>Mensagens e sites fraudulentos projetados para induzir a vítima a revelar senhas ou dados bancários.</p>
+        </article>
+        <article class="card risco">
+          <span class="emoji">☣</span>
+          <h3>Ransomware & Malware</h3>
+          <p>Softwares maliciosos que sequestram dados por criptografia ou infectam dispositivos para espionagem.</p>
+        </article>
+        <article class="card risco">
+          <span class="emoji">♟</span>
+          <h3>Engenharia Social</h3>
+          <p>Manipulação psicológica de pessoas para obter informações confidenciais ou acesso físico/lógico.</p>
+        </article>
+        <article class="card risco">
+          <span class="emoji">⌁</span>
+          <h3>Vulnerabilidades</h3>
+          <p>Brechas em softwares ou redes decorrentes de desatualização ou falhas de configuração de segurança.</p>
+        </article>
+        <article class="card risco">
+          <span class="emoji">🔑</span>
+          <h3>Gestão Inadequada de Credenciais</h3>
+          <p>Uso de senhas fracas, reutilizadas ou ausência de mecanismos de verificação multifator (MFA/2FA).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARTE 1 — CURSO E FORMAÇÃO -->
+    <section class="secao painel-formacao" id="formacao">
+      <p class="rotulo">PARTE 1 — PESQUISA OBRIGATÓRIA</p>
+      <h2>Sobre o Curso e a Formação Profissional</h2>
+      <p class="introducao">Opções de capacitação, modalidades, duração, matérias estudadas e exigências do mercado.</p>
+
+      <div class="grid-formacao">
+        <div class="bloco-info">
+          <h3>Nomes dos Cursos & Modalidades</h3>
+          <ul>
+            <li><strong>Curso Técnico em Segurança da Informação / Redes:</strong> Formação prática de nível médio focada em suporte, configuração e proteção básica. (1,5 a 2 anos).</li>
+            <li><strong>Curso Superior de Tecnologia (CST) em Segurança da Informação / Defesa Cibernética:</strong> Graduação tecnológica focada na prática de mercado e pronta inserção profissional (2 a 3 anos - 4 a 6 semestres).</li>
+            <li><strong>Graduação Bacharelado (Ciência da Computação / Eng. de Software / SI):</strong> Formação abrangente em sistemas e algoritmos com ênfase em cibersegurança (4 a 5 anos).</li>
+            <li><strong>Pós-Graduação & Certificações Globais:</strong> Especializações lato sensu e exames internacionais essenciais (ex: CompTIA Security+, CEH, CISSP, ISO 27001).</li>
+          </ul>
+        </div>
+
+        <div class="bloco-info">
+          <h3>Disciplinas & Conteúdos Estudados</h3>
+          <ul>
+            <li>Redes de Computadores e Protocolos de Comunicação</li>
+            <li>Criptografia, Algoritmos e Assinaturas Digitais</li>
+            <li>Análise de Vulnerabilidades e Teste de Invasão (Pentest)</li>
+            <li>Defesa Cibernética, Firewalls, IDS/IPS e SIEM</li>
+            <li>Forense Computacional e Resposta a Incidentes</li>
+            <li>Governança de TI, LGPD, ISO/IEC 27001 e Gestão de Riscos</li>
+            <li>Segurança em Nuvem (Cloud) e Programação Segura (DevSecOps)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="subtitulo-instituicoes">Instituições de Ensino Mencionadas (Rio de Janeiro e Outros Estados)</h3>
+      <div class="cards tres instituicoes-cards">
+        <article class="card inst-card">
+          <span class="tag-uf">RJ - Pública</span>
+          <h3>IFRJ - Inst. Federal do Rio de Janeiro</h3>
+          <p><strong>Campus:</strong> Rio de Janeiro / Duque de Caxias / Niterói</p>
+          <p><strong>Cursos:</strong> Técnico em Segurança da Informação e CST / Pós em Tecnologia da Informação.</p>
+          <p><strong>Modalidade:</strong> Presencial (Gratuito)</p>
+          <p><strong>Duração:</strong> 1,5 a 3 anos (dependendo do nível)</p>
+        </article>
+        <article class="card inst-card">
+          <span class="tag-uf">RJ - Privada</span>
+          <h3>UniCarioca / Senac RJ / Estácio</h3>
+          <p><strong>Campus:</strong> Rio de Janeiro / Niterói / EAD</p>
+          <p><strong>Curso:</strong> CST em Segurança da Informação / Defesa Cibernética</p>
+          <p><strong>Modalidade:</strong> Presencial, Flex e EAD</p>
+          <p><strong>Duração:</strong> 2,5 anos (5 semestres)</p>
+        </article>
+        <article class="card inst-card">
+          <span class="tag-uf">SP - Outro Estado</span>
+          <h3>FIAP / FATEC São Paulo</h3>
+          <p><strong>Campus:</strong> São Paulo - SP</p>
+          <p><strong>Curso:</strong> CST em Defesa Cibernética / Segurança da Informação</p>
+          <p><strong>Modalidade:</strong> Presencial e EAD</p>
+          <p><strong>Duração:</strong> 2 a 2,5 anos (4 a 5 semestres)</p>
+        </article>
+      </div>
+
+      <div class="caixa-exigencias">
+        <h3>Exigências de Estágio, Registro Profissional e Concursos Públicos</h3>
+        <ul>
+          <li><strong>Estágio Supervisado:</strong> Varia conforme a instituição e o projeto pedagógico do curso. Cursos tecnológicos costumam ter trabalho de conclusão (TCC) ou projeto aplicado, enquanto o estágio é altamente recomendado pelo mercado.</li>
+          <li><strong>Registro Profissional:</strong> Não há um conselho de classe obrigatório exclusivo para cibersegurança no Brasil (diferente do CREA para engenheiros). O registro no CRA (Conselho Regional de Administração) ou SBC (Sociedade Brasileira de Computação) é opcional. O mercado valoriza <strong>certificações técnicas internacionais</strong>.</li>
+          <li><strong>Concursos Públicos:</strong> Diversos órgãos (Polícia Federal, Forças Armadas, SERPRO, Dataprev, Tribunais de Justiça e Bancos Públicos) oferecem vagas com exigência de curso superior de tecnólogo ou bacharelado reconhecido pelo MEC na área de TI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PARTE 2 — COMO INGRESSAR E PAGAR -->
+    <section class="secao escura" id="ingresso">
+      <p class="rotulo">PARTE 2 — PESQUISA OBRIGATÓRIA</p>
+      <h2>Como Ingressar e Financiamento Estudantil</h2>
+      <p class="introducao">Formas reais de acesso ao ensino superior/técnico e estimativa transparente de custos envolvidos.</p>
+
+      <div class="grid-ingresso">
+        <div class="card-ingresso">
+          <h3>Caminhos de Ingresso</h3>
+          <ul>
+            <li><strong>Enem e Sisu:</strong> Para universidades públicas e institutos federais (como IFRJ), utilizando a nota do Exame Nacional do Ensino Médio.</li>
+            <li><strong>Vestibular Próprio / Simplificado:</strong> Utilizado por faculdades privadas, muitas vezes aceitando a nota de redação do Enem ou provas agendadas online.</li>
+            <li><strong>Processos Seletivos Técnicos:</strong> Provas específicas ou análise de histórico escolar para cursos técnicos estaduais e federais.</li>
+            <li><strong>Prouni:</strong> Bolsas de estudo integrais (100%) ou parciais (50%) em instituições privadas baseadas no desempenho do Enem e renda familiar.</li>
+            <li><strong>Fies:</strong> <em>Esclarecimento importante:</em> O Fies é um <strong>financiamento estudantil bancário</strong> e não bolsa gratuita. O estudante cursará a faculdade e pagará o valor financiado após a formatura, com juros e prazos definidos pelo programa.</li>
+            <li><strong>Bolsas Institucionais & Convênios:</strong> Descontos por pontualidade, convênios com empresas e plataformas de bolsas (como Quero Bolsa e Educa Mais Brasil).</li>
+          </ul>
+        </div>
+
+        <div class="card-ingresso">
+          <h3>Gastos e Investimentos Estimados</h3>
+          <ul>
+            <li><strong>Mensalidades (Privadas):</strong> Entre R$ 250,00 a R$ 650,00/mês para modalidades EAD/Flex, e R$ 750,00 a R$ 1.800,00/mês para presencial de ponta no RJ. Em instituições públicas (IFRJ, FATEC), a mensalidade é <strong>100% gratuita</strong>.</li>
+            <li><strong>Transporte e Alimentação:</strong> R$ 200,00 a R$ 500,00/mês para estudantes presenciais no estado do Rio de Janeiro (utilizando benefício de Passe Livre ou BUC).</li>
+            <li><strong>Equipamento Essencial (Computador/Notebook):</strong> Necessário computador com no mínimo 8GB/16GB de RAM e processador quad-core para rodar máquinas virtuais (VirtualBox, Kali Linux) — investimento estimado de R$ 2.500 a R$ 4.500 (gasto único).</li>
+            <li><strong>Conexão de Internet & Laboratórios:</strong> Banda larga estável de boa velocidade (R$ 90 a R$ 150/mês) para estudos e práticas.</li>
+            <li><strong>Exames de Certificação (Opcional, porém relevante):</strong> Exames internacionais custam em média entre US$ 200 e US$ 400.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTE 3 — ÁREAS E SALÁRIOS -->
+    <section class="protecao-carreiras" id="carreiras">
+      <div class="protecao">
+        <p class="rotulo">PARTE 3 — MERCADO & CRESCIMENTO</p>
+        <h2>Áreas de Atuação e Oportunidades no RJ</h2>
+        <p>A Segurança da Informação possui diversos caminhos de especialização para diferentes perfis profissionais:</p>
+
+        <div class="dica">
+          <span>01</span>
+          <div>
+            <h3>Analista de SOC (Security Operations Center)</h3>
+            <p>Monitora alertas de segurança em tempo real, analisa comportamentos suspeitos em redes e identifica incidentes iniciais.</p>
+          </div>
+        </div>
+        <div class="dica">
+          <span>02</span>
+          <div>
+            <h3>Analista de Segurança de Redes & Vulnerabilidades</h3>
+            <p>Mapeia brechas em servidores e roteadores, aplica patches de correção e realiza escaneamentos periódicos.</p>
+          </div>
+        </div>
+        <div class="dica">
+          <span>03</span>
+          <div>
+            <h3>Engenharia de Pentest / Red Team (Segurança Ofensiva)</h3>
+            <p>Simula ataques cibernéticos autorizados para testar as defesas da empresa antes que invasores reais as explorem.</p>
+          </div>
+        </div>
+        <div class="dica">
+          <span>04</span>
+          <div>
+            <h3>Blue Team & Resposta a Incidentes</h3>
+            <p>Atua na contenção imediata, análise forense digital e erradicação de invasões cibernéticas e infecções por ransomware.</p>
+          </div>
+        </div>
+        <div class="dica">
+          <span>05</span>
+          <div>
+            <h3>Privacidade, Governança & LGPD</h3>
+            <p>Garante que a empresa cumpra a Lei Geral de Proteção de Dados, criando políticas de privacidade, auditorias e gestão de riscos.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="carreiras">
+        <p class="rotulo">REMUNERAÇÃO NO RIO DE JANEIRO</p>
+        <h2>Faixas Salariais Atualizadas</h2>
+        <p>Dados de pesquisas de mercado e portais de emprego (Glassdoor / Catho / Salario.com.br - Rio de Janeiro, RJ):</p>
+        
+        <ul class="lista-salarios">
+          <li><strong>Estagiário / Trainee de TI/Segurança:</strong> R$ 1.300 a R$ 2.200 (Jornada: 30h/semana)</li>
+          <li><strong>Analista Junior (Início de carreira):</strong> R$ 3.800 a R$ 5.500 (Jornada: 40h/semana)</li>
+          <li><strong>Analista Pleno:</strong> R$ 6.200 a R$ 9.500 (Jornada: 40h/semana)</li>
+          <li><strong>Analista Sênior / Especialista:</strong> R$ 10.500 a R$ 16.000+ (Jornada: 40h/semana)</li>
+          <li><strong>Especialista / Consultor / CISO:</strong> R$ 18.000 a R$ 30.000+</li>
+        </ul>
+
+        <div class="fatores-variacao">
+          <p><strong>Fatores que variam o salário:</strong> Porte da empresa (bancos e multinacionais pagam mais), certificações internacionais (Security+, CEH, CISSP), nível de inglês e modalidade de trabalho (presencial no RJ vs. trabalho remoto internacional).</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PARTE 4 — A PROFISSÃO NA PRÁTICA (SIMULAÇÃO) -->
+    <section class="secao pratica-secao" id="pratica">
+      <div class="pratica-intro">
+        <p class="rotulo">REQUISITO OBRIGATÓRIO DA FEIRA</p>
+        <h2>A Profissão na Prática — Simulação do Analista</h2>
+        <p class="subtitulo-pratica">Assuma o papel de um Analista de Segurança da Informação e resolva um incidente real de tentativa de Phishing Corporativo.</p>
+      </div>
+
+      <!-- CENÁRIO DO INCIDENTE -->
+      <div class="cenario-box">
+        <div class="cenario-cabecalho">
+          <span class="alerta-tag">⚠️ INCIDENTE EM ANDAMENTO • REDE CORPORATIVA</span>
+          <h3>Cenário de Trabalho Real</h3>
+        </div>
+        <p><strong>O Problema:</strong> Uma funcionária do setor financeiro recebe um e-mail urgente parecendo vir do setor de TI da empresa, afirmando: <em>"Sua conta será bloqueada em 10 minutos por falta de atualização de segurança. Clique aqui e confirme sua senha imediatamente."</em> Ela desconfia e entra em contato com a equipe de Segurança da Informação.</p>
+        
+        <!-- CARD DO EMAIL SUSPEITO SIMULADO -->
+        <div class="email-simulado">
+          <div class="email-topo">
+            <span class="email-remetente"><strong>De:</strong> suporte-ti-atualizacao@suporte-empresa-segura.com</span>
+            <span class="email-assunto"><strong>Assunto:</strong> [URGENTE] Bloqueio de conta iminente - Ação necessária!</span>
+          </div>
+          <div class="email-corpo">
+            <p>Prezada colaboradora,</p>
+            <p>Detectamos uma inconsistência na sua conta. Se você não recadastrar sua senha nos próximos 10 minutos, seu acesso ao sistema de pagamentos será suspenso permanentemente.</p>
+            <p><a class="link-falso" href="#pratica" onclick="return false;">👉 Clique aqui para recadastrar sua senha agora</a></p>
+            <p>Atenciosamente,<br><em>Equipe de Suporte e TI</em></p>
+          </div>
+        </div>
+
+        <div class="pergunta-simulacao">
+          <h3>Como profissional de Segurança da Informação, qual é a sua decisão?</h3>
+          <p>Escolha a conduta mais adequada para gerenciar esse incidente:</p>
+        </div>
+
+        <div class="opcoes-simulacao" id="opcoesSimulacao">
+          <button type="button" class="btn-simulacao" data-opcao="A">
+            <span class="op-letra">A</span>
+            <span class="op-texto">Clicar no link imediatamente para checar se a página de login que se abre é verdadeira ou falsa.</span>
+          </button>
+          <button type="button" class="btn-simulacao" data-opcao="B">
+            <span class="op-letra">B</span>
+            <span class="op-texto">Orientar a funcionária a não clicar nem digitar dados, isolar a mensagem, analisar os cabeçalhos do e-mail, comunicar os canais oficiais de TI e checar os logs do servidor de e-mails para verificar se outros funcionários receberam a ameaça.</span>
+          </button>
+          <button type="button" class="btn-simulacao" data-opcao="C">
+            <span class="op-letra">C</span>
+            <span class="op-texto">Encaminhar o e-mail para todos os colaboradores da empresa perguntando se mais alguém recebeu para tirar a dúvida.</span>
+          </button>
+        </div>
+
+        <div id="feedbackSimulacao" class="feedback-simulacao" hidden>
+          <div id="feedbackSimConteudo"></div>
+          <button type="button" class="botao" id="reiniciarSimulacao">Tentar novamente ↻</button>
+        </div>
+      </div>
+
+      <!-- EXPLICAÇÃO DA ATUAÇÃO REAL -->
+      <div class="pos-simulacao-explicacao">
+        <h3>Como o Profissional Atua no Dia a Dia Após o Incidente</h3>
+        <div class="cards tres">
+          <div class="card">
+            <h4>1. Identificação & Avaliação de Risco</h4>
+            <p>Examina o domínio do remetente, analisa links falsos e verifica se a mensagem possui características típicas de golpe psicológico de urgência.</p>
+          </div>
+          <div class="card">
+            <h4>2. Contenção & Investigação nos Logs</h4>
+            <p>Bloqueia o remetente malicioso no Gateway de E-mail, busca no servidor por outros destinatários e remove as mensagens das caixas de entrada dos colegas.</p>
+          </div>
+          <div class="card">
+            <h4>3. Orientação & Mitigação Futura</h4>
+            <p>Instruir a equipe, reforçar treinamentos de conscientização em segurança da informação e aplicar filtros antiphishing mais rígidos na empresa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTE 5 — QUIZ MELHORADO -->
+    <section class="quiz-secao" id="quiz">
+      <div class="quiz-intro">
+        <p class="rotulo">DESAFIO INTERATIVO</p>
+        <h2>Teste seus conhecimentos no Quiz da Feira</h2>
+        <p>Responda às 10 perguntas situacionais sobre phishing, senhas, autenticação em dois fatores, backups, privacidade, resposta a incidentes e ética profissional. Descubra sua nota e explicação na hora!</p>
+        <div class="quiz-tags">
+          <span>10 Perguntas Situacionais</span>
+          <span>Respostas Explicadas</span>
+          <span>100% Interativo</span>
+        </div>
+      </div>
+
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-topo">
+          <span id="progressoTexto">Pergunta 1 de 10</span>
+          <span id="pontuacaoParcial">Acertos: 0</span>
+        </div>
+        <div class="barra"><span id="barraProgresso"></span></div>
+        <h3 id="pergunta">Carregando pergunta...</h3>
+        <div id="opcoes" class="opcoes"></div>
+        <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+        <div class="quiz-acoes">
+          <button class="botao" id="confirmar" disabled>Confirmar resposta</button>
+          <button class="botao secundario" id="proxima" hidden>Próxima pergunta →</button>
+        </div>
+      </div>
+
+      <div id="resultado" class="resultado" hidden aria-live="polite">
+        <div class="resultado-icone">✓</div>
+        <p class="rotulo">SEU RESULTADO FINAL</p>
+        <h3 id="resultadoTitulo">Excelente!</h3>
+        <p id="resultadoTexto"></p>
+        <div class="resultado-numero">
+          <strong id="resultadoPontos">0/10</strong>
+          <span>respostas corretas</span>
+        </div>
+        <button class="botao" id="reiniciar">Tentar novamente ↻</button>
+        <p class="nota-privacidade">Este quiz é executado diretamente no seu navegador. Nenhuma informação pessoal é coletada.</p>
+      </div>
+    </section>
+
+    <!-- FONTES E REFERÊNCIAS -->
+    <section class="secao escura fontes-secao" id="fontes">
+      <p class="rotulo">TRANSPARÊNCIA & PESQUISA</p>
+      <h2>Fontes e Referências de Consulta</h2>
+      <ul class="lista-fontes">
+        <li><strong>IFRJ (Instituto Federal do Rio de Janeiro):</strong> Projetos pedagógicos dos cursos técnicos e superiores de Tecnologia da Informação. <a href="https://www.ifrj.edu.br" target="_blank" rel="noopener">ifrj.edu.br</a></li>
+        <li><strong>Cert.br (Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil):</strong> Cartilha de Segurança para a Internet. <a href="https://cartilha.cert.br" target="_blank" rel="noopener">cartilha.cert.br</a></li>
+        <li><strong>MEC / Guia da Faculdade / Sisu:</strong> Informações de cursos de graduação e formas de ingresso em TI. <a href="https://acessounico.mec.gov.br/sisu" target="_blank" rel="noopener">sisu.mec.gov.br</a></li>
+        <li><strong>Pesquisas de Remuneração e Emprego (2025/2026):</strong> Portais de carreiras Glassdoor, Catho e Salario.com.br (recortes para o estado do Rio de Janeiro - RJ).</li>
+      </ul>
+    </section>
+
+    <section class="chamada">
+      <p class="rotulo">LEMBRE-SE</p>
+      <h2>Segurança digital começa com informação e prevenção.</h2>
+      <p>Compartilhe conhecimento, proteja suas credenciais e ajude a construir um ambiente digital seguro!</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Segurança da Informação</strong>
+      <p>Proteja seu mundo digital.</p>
+    </div>
+    <p>Projeto para a Feira de Profissões • Apresentação Escolar</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+========================================================================
+   FEIRA DE PROFISSÕES — SITE DE SEGURANÇA DA INFORMAÇÃO
+   GUIA DE EXECUÇÃO NO VS CODE E PUBLICAÇÃO NO GITHUB PAGES
+========================================================================
+
+Este projeto foi totalmente atualizado para a Feira de Profissões, mantendo o visual original, incluindo todas as seções obrigatórias de pesquisa escolar (Cursos, Ingressos, Custos, Carreiras e Salários no RJ), a simulação interativa "A Profissão na Prática" e o Quiz aprimorado de 10 perguntas.
+
+------------------------------------------------------------------------
+1. ESTRUTURA DOS ARQUIVOS NO ZIP
+------------------------------------------------------------------------
+- index.html   : Estrutura completa da página com todas as seções e pesquisas.
+- style.css    : Estilização responsiva, preservando cores, botões e visual original.
+- script.js     : Código JavaScript funcional para a simulação interativa e quiz.
+- image.png    : Imagem de fundo e identidade gráfica mantida do projeto original.
+- LEIA-ME.txt  : Instruções passo a passo (este arquivo).
+
+------------------------------------------------------------------------
+2. COMO ABRIR E TESTAR NO VISUAL STUDIO CODE
+------------------------------------------------------------------------
+1. Extraia o conteúdo deste arquivo ZIP em uma pasta no seu computador.
+2. Abra o Visual Studio Code (VS Code).
+3. Vá em "File" -> "Open Folder..." (ou "Arquivo" -> "Abrir Pasta...") e selecione a pasta extraída.
+4. Para visualizar o site localmente no seu navegador:
+   - Abra o arquivo `index.html`.
+   - Clique com o botão direito sobre o código e selecione "Open with Live Server" (se tiver a extensão Live Server instalada).
+   - Ou simplesmente dê um duplo clique no arquivo `index.html` dentro da pasta no Explorador de Arquivos do Windows/Mac.
+
+------------------------------------------------------------------------
+3. PASSO A PASSO PARA PUBLICAR NO GITHUB PAGES
+------------------------------------------------------------------------
+Para disponibilizar o site na internet e gerar o QR Code para a Feira de Profissões:
+
+Passo 1: Criar um Repositório no GitHub
+1. Acesse https://github.com e faça login na sua conta.
+2. Clique no botão "+" no canto superior direito e escolha "New repository" (Novo repositório).
+3. Em "Repository name", digite um nome (exemplo: `seguranca-da-informacao-feira`).
+4. Garanta que o repositório esteja marcado como "Public" (Público).
+5. Clique em "Create repository" (Criar repositório).
+
+Passo 2: Fazer Upload dos Arquivos
+1. Na página do repositório recém-criado, clique na opção "uploading an existing file" (enviar um arquivo existente).
+2. Selecione e arraste TODOS os arquivos da pasta (index.html, style.css, script.js, image.png, LEIA-ME.txt).
+3. Aguarde o envio dos arquivos e clique no botão verde "Commit changes".
+
+Passo 3: Ativar o GitHub Pages
+1. No repositório do seu projeto, clique na aba "Settings" (Configurações) no topo da página.
+2. No menu lateral esquerdo, clique em "Pages".
+3. Em "Build and deployment" -> "Branch", altere de "None" para `main` (ou `master`).
+4. Deixe a pasta marcada como `/ (root)` e clique em "Save".
+5. Aguarde cerca de 1 a 2 minutos. Atualize a página.
+6. O GitHub exibirá o link público do seu site (exemplo: `https://seu-usuario.github.io/seguranca-da-informacao-feira/`).
+
+Passo 4: Gerar o QR Code para a Feira
+1. Copie o link do seu site gerado pelo GitHub Pages.
+2. Acesse um gerador de QR Code gratuito (como qr-code-generator.com ou me-qr.com).
+3. Cole o link e baixe a imagem do QR Code para imprimir no cartaz da feira!
+
+------------------------------------------------------------------------
+Projeto atualizado e pronto para apresentação na Feira de Profissões.
