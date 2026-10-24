@@ -1,4 +1,4 @@
-// QUIZ COMPLETO E SENSÍVEL AO CONTEXTO
+// QUIZ COMPLETO COM RESPOSTAS DISTRIBUÍDAS (A, B, C, D)
 const perguntas = [
   {
     pergunta: "Uma funcionária do setor financeiro recebe um e-mail urgente solicitando recadastramento imediato de senha via link externo para evitar o bloqueio de conta. Qual é a postura ética e segura?",
@@ -8,29 +8,29 @@ const perguntas = [
       "Não clicar, não digitar dados e notificar a equipe de Segurança/TI pelo canal oficial.",
       "Encaminhar o e-mail para todos os colaboradores do setor perguntando se é verdade."
     ],
-    correta: 2,
+    correta: 2, // Resposta C
     explicacao: "Excelente! Esta é uma tentativa clássica de phishing. Comunicar os canais oficiais permite que a TI bloqueie o ataque para toda a organização."
   },
   {
     pergunta: "Para garantir a Confidencialidade dos dados de clientes em um sistema web, qual medida é indispensável?",
     opcoes: [
-      "Deixar o banco de dados aberto para consulta pública.",
       "Implementar criptografia no armazenamento e no transporte dos dados (HTTPS/TLS).",
+      "Deixar o banco de dados aberto para consulta pública.",
       "Manter backups semanais guardados no mesmo servidor.",
       "Desativar o uso de senhas para facilitar o login."
     ],
-    correta: 1,
+    correta: 0, // Resposta A
     explicacao: "Exato! A criptografia transforma dados legíveis em códigos cifrados, garantindo que apenas pessoas com a chave autorizada tenham acesso."
   },
   {
     pergunta: "O que é a Autenticação em Dois Fatores (2FA / MFA) e qual a sua importância?",
     opcoes: [
       "Um método que exige duas senhas iguais escritas em papéis diferentes.",
-      "Uma camada adicional de segurança que exige um segundo fator (código no celular, biometria ou token) além da senha.",
       "Um programa que duplica a velocidade da conexão de internet.",
-      "Um antivírus que verifica os arquivos do computador duas vezes por dia."
+      "Um antivírus que verifica os arquivos do computador duas vezes por dia.",
+      "Uma camada adicional de segurança que exige um segundo fator (código no celular, biometria ou token) além da senha."
     ],
-    correta: 1,
+    correta: 3, // Resposta D
     explicacao: "Correto! Mesmo que sua senha seja descoberta ou vazada, o invasor não conseguirá acessar a conta sem o segundo fator."
   },
   {
@@ -41,40 +41,40 @@ const perguntas = [
       "Fazer backup em 3 minutos, esperar 2 horas e apagar 1 arquivo.",
       "Manter 3 antivírus instalados no mesmo computador."
     ],
-    correta: 1,
+    correta: 1, // Resposta B
     explicacao: "Muito bem! A regra 3-2-1 garante redundância e sobrevivência dos dados contra ransomware, incêndios ou falhas de hardware."
   },
   {
     pergunta: "Qual é o principal risco de conectar um computador corporativo a uma rede Wi-Fi pública e aberta sem o uso de VPN?",
     opcoes: [
       "O computador perder instantaneamente toda a memória RAM.",
-      "Interceptação de tráfego (Ataque Man-in-the-Middle) e roubo de dados não criptografados.",
       "Aumento automático do consumo de energia da bateria.",
+      "Interceptação de tráfego (Ataque Man-in-the-Middle) e roubo de dados não criptografados.",
       "A rede pública apagar automaticamente todos os e-mails."
     ],
-    correta: 1,
+    correta: 2, // Resposta C
     explicacao: "Isso mesmo! Em redes públicas não protegidas, atacantes podem interceptar o tráfego de dados. A VPN criptografa toda a comunicação."
   },
   {
     pergunta: "O que caracteriza uma ameaça do tipo Ransomware?",
     opcoes: [
-      "Um e-mail comercial com promoções indesejadas.",
       "Um programa malicioso que criptografa os arquivos do usuário e exige resgate em dinheiro/criptomoedas para liberação.",
+      "Um e-mail comercial com promoções indesejadas.",
       "Uma falha física no cabo de rede.",
       "Um aviso oficial de atualização do sistema operacional."
     ],
-    correta: 1,
+    correta: 0, // Resposta A
     explicacao: "Exato! O Ransomware 'sequestra' os dados do dispositivo por meio de criptografia forte, exigindo resgate."
   },
   {
     pergunta: "De acordo com a Lei Geral de Proteção de Dados (LGPD) no Brasil, qual é o papel do profissional de Segurança da Informação?",
     opcoes: [
       "Vender os dados de cadastros de usuários para empresas de publicidade.",
-      "Garantir medidas técnicas e administrativas apropriadas para proteger dados pessoais contra acessos não autorizados e vazamentos.",
       "Proibir qualquer cidadão de usar a internet.",
-      "Apagar o histórico da internet do celular dos colaboradores."
+      "Apagar o histórico da internet do celular dos colaboradores.",
+      "Garantir medidas técnicas e administrativas apropriadas para proteger dados pessoais contra acessos não autorizados e vazamentos."
     ],
-    correta: 1,
+    correta: 3, // Resposta D
     explicacao: "Perfeito! O profissional estabelece controles de acesso, criptografia e políticas de privacidade alinhadas às exigências da LGPD."
   },
   {
@@ -85,7 +85,7 @@ const perguntas = [
       "Para fazer o computador ocupar mais espaço no disco rígido.",
       "Para desativar a necessidade de backups."
     ],
-    correta: 1,
+    correta: 1, // Resposta B
     explicacao: "Correto! Atualizações contêm pacotes de correção (patches) para fechar brechas que invasores conhecem e tentam explorar."
   },
   {
@@ -96,18 +96,18 @@ const perguntas = [
       "Comunicar responsavelmente a equipe de desenvolvimento para que a correção seja aplicada antes de qualquer divulgação (Divulgação Responsável).",
       "Vender o código de exploração no mercado negro."
     ],
-    correta: 2,
+    correta: 2, // Resposta C
     explicacao: "Excelente! A ética profissional e o princípio da Divulgação Responsável exigem relatar a falha à equipe responsável para que a correção seja desenvolvida."
   },
   {
     pergunta: "O que diferencia a Segurança da Informação da Segurança Cibernética (Cibersegurança)?",
     opcoes: [
-      "São termos opostos que não possuem nenhuma relação.",
       "Segurança da Informação protege a informação em qualquer formato (físico ou digital); Cibersegurança foca na proteção de ativos no espaço cibernético/conectado.",
+      "São termos opostos que não possuem nenhuma relação.",
       "Cibersegurança trata apenas de papéis e documentos impressos.",
       "Segurança da Informação é usada apenas em robótica."
     ],
-    correta: 1,
+    correta: 0, // Resposta A
     explicacao: "Isso mesmo! A Segurança da Informação é mais abrangente (inclui documentos em papel, políticas, treinamento), enquanto a Cibersegurança foca na infraestrutura digital e em rede."
   }
 ];
